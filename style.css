@@ -53,3 +53,27 @@ a, a:visited, a:active{
     letter-spacing: 5px;
 }
 
+/* Dark forest green for main content sections (Portfolio & Contact) */
+.my-background {
+  background-color: #2b3a2a;
+  color: #f0f4f1; /* Light cream text for high contrast */
+}
+
+/* Slightly darker deep green for navbar/header */
+.my-background-2 {
+  background-color: #1e291d;
+}
+
+/* Ensure headings and links inside these sections remain readable */
+.my-background .heading,
+.my-background h2,
+.my-background h5,
+.my-background h6,
+.my-background p {
+  color: #f0f4f1;
+}
+
+.my-background-2 .nav-link,
+.my-background-2 #zach-social {
+  color: #e0e9e1 !important;
+}

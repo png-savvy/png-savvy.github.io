@@ -38,18 +38,55 @@
 }
 
 
-/* .my-background {
-    background-image: linear-gradient(#6f976f, #f1fff1, #6f976f);
+/* Force main body and section background */
+.my-background {
+  background-color: #2b3a2a !important;
+  color: #f0f4f1 !important;
 }
 
+/* Force navbar container background */
+.my-background-2, 
+nav.my-background-2 {
+  background-color: #1e291d !important;
+}
+
+/* Fix navbar link visibility on dark background */
+.my-background-2 .nav-link,
+.my-background-2 .nav-link:visited {
+  color: #e0e9e1 !important;
+}
+
+.my-background-2 .nav-link:hover {
+  color: #a3c2a0 !important;
+}
+
+/* Fix social icons visibility (Font Awesome uses pseudo-elements) */
+.my-background-2 #zach-social,
+.my-background-2 #zach-social::before {
+  color: #e0e9e1 !important;
+}
+
+/* Ensure section text remains clear */
+.my-background .heading,
+.my-background h2,
+.my-background h5,
+.my-background h6,
+.my-background p {
+  color: #f0f4f1 !important;
+}
+
+/* Remove default bottom/top borders and shadows from header & navbar */
+header.header,
+.navbar,
 .my-background-2 {
-    background-color: #6f976f !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
-.nav-link {
-    color:black !important;
+/* Remove active/hover bottom borders on nav links */
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus {
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
-
-.nav-link:hover {
-    color:rgb(255, 255, 255) !important;
-} */
